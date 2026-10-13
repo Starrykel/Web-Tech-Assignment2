@@ -1,0 +1,59 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,inital-scale=1.0">
+    <title>Developer Workshop Registration</title>
+
+    <link href=""https://fonts.googleapis.com/css?family=Open+Sans>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class ="form-container">
+        <h1>Developer Workshop Registration</h1>
+        <div class="form-container">
+        <form id="registration-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Ama Nkansah" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="ama@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Experience Level</label>
+                <select id="experience" name="experience" required>
+                    <option value=" " disabled selected>Select your experience...</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Workshop Track</label>
+                <class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="track" value="frontend" required>Frontend Web
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="track" value="backend">Backend APIs
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="track" value="uiux">UI/UX Design
+                    </label>
+                </div>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="notification" name="notification">
+                <label for="notifcations">Send me email updates & event reminders</label>
+            </div>
+            <button type="submit">Register Now</button>
+    </div>
+    </div>  
+</body>
+</html>
